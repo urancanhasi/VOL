@@ -11,7 +11,85 @@
     tools:context="com.example.uran.testapplication.MainActivity">
 
     <TextView
-        android:text="Hello World!"
+        android:text="Start"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:id="@+id/result"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:layout_marginTop="30dp"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/question"
+        android:id="@+id/imageMark1"
+        android:layout_below="@+id/result"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/question"
+        android:id="@+id/imageMark2"
+        android:layout_below="@+id/result"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/question"
+        android:id="@+id/imageMark3"
+        android:layout_alignTop="@+id/imageMark2"
+        android:layout_alignLeft="@+id/imageMark6"
+        android:layout_alignStart="@+id/imageMark6" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/question"
+        android:id="@+id/imageMark4"
+        android:layout_alignTop="@+id/imageMark5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/question"
+        android:id="@+id/imageMark5"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/question"
+        android:id="@+id/imageMark6"
+        android:layout_alignTop="@+id/imageMark5"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/imageMark5"
+        android:width="220dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/inputText"/>
+
+    <Chronometer
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chronometer"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/inputText"
+        android:layout_marginTop="20dp"
+        android:textSize="30dp"
+        android:textColor="#1d758e"/>
+
+
 </RelativeLayout>
